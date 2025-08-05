@@ -8,35 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Hip-hop inspired dark theme */
+    --background: 0 0% 7%;
+    --foreground: 45 100% 85%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 12%;
+    --card-foreground: 45 100% 85%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 45 100% 85%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 45 100% 65%;
+    --primary-foreground: 0 0% 7%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 30 100% 60%;
+    --secondary-foreground: 0 0% 7%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 45 50% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 330 100% 70%;
+    --accent-foreground: 0 0% 7%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 25%;
+    --input: 0 0% 20%;
+    --ring: 45 100% 65%;
 
-    --radius: 0.5rem;
+    /* Custom hip-hop colors */
+    --gold: 45 100% 65%;
+    --orange: 30 100% 60%;
+    --purple: 270 100% 70%;
+    --pink: 330 100% 70%;
+    --dark-bg: 0 0% 7%;
+    --dark-card: 0 0% 12%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--orange)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--purple)), hsl(var(--pink)));
+    --gradient-dark: linear-gradient(180deg, hsl(var(--dark-bg)), hsl(var(--dark-card)));
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 

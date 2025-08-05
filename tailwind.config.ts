@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Hip-hop themed colors
+				gold: 'hsl(var(--gold))',
+				orange: 'hsl(var(--orange))',
+				purple: 'hsl(var(--purple))',
+				pink: 'hsl(var(--pink))',
+				'dark-bg': 'hsl(var(--dark-bg))',
+				'dark-card': 'hsl(var(--dark-card))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
