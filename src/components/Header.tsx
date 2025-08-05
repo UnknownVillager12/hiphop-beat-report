@@ -21,19 +21,19 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-foreground hover:text-gold transition-colors font-medium">
+            <a href="/" className="text-foreground hover:text-gold transition-colors font-medium">
               Reviews
             </a>
-            <a href="#" className="text-foreground hover:text-gold transition-colors font-medium">
+            <a href="/news" className="text-foreground hover:text-gold transition-colors font-medium">
               News
             </a>
             <a href="/artists" className="text-foreground hover:text-gold transition-colors font-medium">
               Artists
             </a>
-            <a href="#" className="text-foreground hover:text-gold transition-colors font-medium">
+            <a href="/albums" className="text-foreground hover:text-gold transition-colors font-medium">
               Albums
             </a>
-            <a href="#" className="text-foreground hover:text-gold transition-colors font-medium">
+            <a href="/culture" className="text-foreground hover:text-gold transition-colors font-medium">
               Culture
             </a>
           </nav>
@@ -43,8 +43,8 @@ const Header = () => {
             <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-gold">
               <Search className="h-5 w-5" />
             </Button>
-            <Button variant="hero" className="hidden md:inline-flex">
-              Submit Review
+            <Button variant="hero" className="hidden md:inline-flex" asChild>
+              <a href="/submit-review">Submit Review</a>
             </Button>
             <Button variant="ghost" size="icon" className="md:hidden">
               <Menu className="h-5 w-5" />
