@@ -27,7 +27,7 @@ const Header = () => {
             <a href="#" className="text-foreground hover:text-gold transition-colors font-medium">
               News
             </a>
-            <a href="#" className="text-foreground hover:text-gold transition-colors font-medium">
+            <a href="/artists" className="text-foreground hover:text-gold transition-colors font-medium">
               Artists
             </a>
             <a href="#" className="text-foreground hover:text-gold transition-colors font-medium">
