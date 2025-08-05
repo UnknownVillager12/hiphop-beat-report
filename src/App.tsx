@@ -6,9 +6,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Artists from "./pages/Artists";
 import Albums from "./pages/Albums";
+import AlbumDetail from "./pages/AlbumDetail";
 import News from "./pages/News";
+import NewsDetail from "./pages/NewsDetail";
 import Culture from "./pages/Culture";
 import SubmitReview from "./pages/SubmitReview";
+import ArtistDetail from "./pages/ArtistDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,8 +25,11 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/artists" element={<Artists />} />
+          <Route path="/artist/:id" element={<ArtistDetail />} />
           <Route path="/albums" element={<Albums />} />
+          <Route path="/album/:id" element={<AlbumDetail />} />
           <Route path="/news" element={<News />} />
+          <Route path="/news/:id" element={<NewsDetail />} />
           <Route path="/culture" element={<Culture />} />
           <Route path="/submit-review" element={<SubmitReview />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

@@ -5,6 +5,7 @@ import NewsCard from "@/components/NewsCard";
 const News = () => {
   const newsArticles = [
     {
+      id: 1,
       title: "Kendrick Lamar Announces Surprise Album Release Date",
       excerpt: "The Compton rapper drops hints about his upcoming project in a cryptic Instagram post, sending fans into a frenzy.",
       author: "Marcus Johnson",
@@ -13,6 +14,7 @@ const News = () => {
       readTime: "3 min"
     },
     {
+      id: 2,
       title: "Drake's Latest Album Breaks Streaming Records",
       excerpt: "The Canadian superstar's new release achieves unprecedented numbers on all major streaming platforms within 24 hours.",
       author: "Sarah Chen",
@@ -21,6 +23,7 @@ const News = () => {
       readTime: "4 min"
     },
     {
+      id: 3,
       title: "J. Cole Announces Dreamville Festival 2024 Lineup",
       excerpt: "The North Carolina festival returns with an incredible lineup featuring both established and emerging hip-hop artists.",
       author: "David Rodriguez",
@@ -29,6 +32,7 @@ const News = () => {
       readTime: "2 min"
     },
     {
+      id: 4,
       title: "The Rise of Female Rappers in 2024",
       excerpt: "An in-depth look at how women are reshaping the hip-hop landscape with their unique voices and perspectives.",
       author: "Jasmine Williams",
@@ -37,6 +41,7 @@ const News = () => {
       readTime: "6 min"
     },
     {
+      id: 5,
       title: "Vinyl Sales Surge as Hip-Hop Embraces Physical Media",
       excerpt: "Classic and new hip-hop albums are driving a renaissance in vinyl record sales across the globe.",
       author: "Mike Thompson",
@@ -45,6 +50,7 @@ const News = () => {
       readTime: "5 min"
     },
     {
+      id: 6,
       title: "Travis Scott's Astroworld Documentary Premieres",
       excerpt: "A new documentary examines the events and aftermath of the controversial Houston festival.",
       author: "Lisa Park",

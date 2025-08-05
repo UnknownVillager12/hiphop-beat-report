@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Clock, User, ArrowRight } from "lucide-react";
 
 interface NewsCardProps {
+  id?: number;
   title: string;
   excerpt: string;
   author: string;
@@ -11,9 +13,10 @@ interface NewsCardProps {
   readTime: string;
 }
 
-const NewsCard = ({ title, excerpt, author, date, category, readTime }: NewsCardProps) => {
+const NewsCard = ({ id = 1, title, excerpt, author, date, category, readTime }: NewsCardProps) => {
   return (
-    <Card className="bg-dark-card border-border hover:border-gold/30 transition-all duration-300 cursor-pointer group overflow-hidden">
+    <Link to={`/news/${id}`}>
+      <Card className="bg-dark-card border-border hover:border-gold/30 transition-all duration-300 cursor-pointer group overflow-hidden">
       <div className="p-6">
         <div className="flex items-center justify-between mb-4">
           <Badge variant="outline" className="border-orange text-orange">
@@ -46,6 +49,7 @@ const NewsCard = ({ title, excerpt, author, date, category, readTime }: NewsCard
         </div>
       </div>
     </Card>
+  </Link>
   );
 };
 

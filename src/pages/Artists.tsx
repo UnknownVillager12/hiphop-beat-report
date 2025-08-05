@@ -8,87 +8,96 @@ const Artists = () => {
   // Mock data for artists
   const featuredArtists = [
     {
+      id: 1,
       name: "Kendrick Lamar",
       genre: "Conscious Rap",
       followers: "15.2M",
       activeYears: "2010-Present",
       location: "Compton, CA",
-      image: "/placeholder.svg",
+      image: "/src/assets/album-placeholder.jpg",
       topSongs: ["HUMBLE.", "DNA.", "King Kunta", "Alright", "Money Trees"]
     },
     {
+      id: 2,
       name: "J. Cole",
       genre: "Conscious Rap",
       followers: "12.8M",
       activeYears: "2007-Present", 
       location: "Fayetteville, NC",
-      image: "/placeholder.svg",
+      image: "/src/assets/album-placeholder.jpg",
       topSongs: ["Middle Child", "No Role Modelz", "Love Yourz", "ATM", "Crooked Smile"]
     },
     {
+      id: 3,
       name: "Tyler, The Creator",
       genre: "Alternative Hip-Hop",
       followers: "8.9M",
       activeYears: "2008-Present",
       location: "Los Angeles, CA", 
-      image: "/placeholder.svg",
+      image: "/src/assets/album-placeholder.jpg",
       topSongs: ["EARFQUAKE", "See You Again", "Yonkers", "Who Dat Boy", "IGOR'S THEME"]
     }
   ];
 
   const allArtists = [
     {
+      id: 4,
       name: "Drake",
       genre: "Pop Rap",
       followers: "18.7M",
       activeYears: "2006-Present",
       location: "Toronto, ON",
-      image: "/placeholder.svg",
+      image: "/src/assets/album-placeholder.jpg",
       topSongs: ["God's Plan", "Hotline Bling", "One Dance", "In My Feelings", "Started From the Bottom"]
     },
     {
+      id: 5,
       name: "Travis Scott",
       genre: "Trap",
       followers: "14.3M", 
       activeYears: "2008-Present",
       location: "Houston, TX",
-      image: "/placeholder.svg",
+      image: "/src/assets/album-placeholder.jpg",
       topSongs: ["SICKO MODE", "Antidote", "Goosebumps", "Highest in the Room", "STARGAZING"]
     },
     {
+      id: 6,
       name: "Lil Baby",
       genre: "Trap",
       followers: "11.5M",
       activeYears: "2015-Present",
       location: "Atlanta, GA",
-      image: "/placeholder.svg",
+      image: "/src/assets/album-placeholder.jpg",
       topSongs: ["Drip Too Hard", "Yes Indeed", "Life Goes On", "The Bigger Picture", "We Paid"]
     },
     {
+      id: 7,
       name: "Future",
       genre: "Trap",
       followers: "10.2M",
       activeYears: "2010-Present",
       location: "Atlanta, GA",
-      image: "/placeholder.svg",
+      image: "/src/assets/album-placeholder.jpg",
       topSongs: ["Mask Off", "Life Is Good", "Jumpman", "March Madness", "Low Life"]
     },
     {
+      id: 8,
       name: "21 Savage",
       genre: "Trap",
       followers: "9.8M",
       activeYears: "2013-Present",
       location: "Atlanta, GA",
-      image: "/placeholder.svg",
+      image: "/src/assets/album-placeholder.jpg",
       topSongs: ["Rockstar", "A Lot", "Bank Account", "X", "Jimmy Cooks"]
     },
     {
+      id: 9,
       name: "Lil Wayne",
       genre: "Southern Hip-Hop",
       followers: "13.1M",
       activeYears: "1995-Present",
       location: "New Orleans, LA",
-      image: "/placeholder.svg",
+      image: "/src/assets/album-placeholder.jpg",
       topSongs: ["Lollipop", "A Milli", "6 Foot 7 Foot", "How to Love", "Mirror"]
     }
   ];
@@ -141,8 +150,8 @@ const Artists = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {featuredArtists.map((artist, index) => (
-              <ArtistCard key={index} {...artist} featured />
+            {featuredArtists.map((artist) => (
+              <ArtistCard key={artist.id} {...artist} featured />
             ))}
           </div>
         </div>
@@ -173,8 +182,8 @@ const Artists = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {allArtists.map((artist, index) => (
-              <ArtistCard key={index} {...artist} />
+            {allArtists.map((artist) => (
+              <ArtistCard key={artist.id} {...artist} />
             ))}
           </div>
           

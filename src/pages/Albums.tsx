@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
@@ -84,7 +85,8 @@ const Albums = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {albums.map((album) => (
-            <Card key={album.id} className="bg-dark-card border-border hover:border-gold/30 transition-all duration-300 cursor-pointer group overflow-hidden">
+            <Link key={album.id} to={`/album/${album.id}`}>
+              <Card className="bg-dark-card border-border hover:border-gold/30 transition-all duration-300 cursor-pointer group overflow-hidden">
               <div className="aspect-square bg-gradient-to-br from-purple/20 to-pink/20 relative overflow-hidden">
                 <img 
                   src={album.image} 
@@ -122,6 +124,7 @@ const Albums = () => {
                 </div>
               </div>
             </Card>
+            </Link>
           ))}
         </div>
       </main>
