@@ -11,6 +11,7 @@ import News from "./pages/News";
 import NewsDetail from "./pages/NewsDetail";
 import Culture from "./pages/Culture";
 import SubmitReview from "./pages/SubmitReview";
+import AddNewsArticle from "./pages/AddNewsArticle";
 import ArtistDetail from "./pages/ArtistDetail";
 import NotFound from "./pages/NotFound";
 
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/album/:id" element={<AlbumDetail />} />
           <Route path="/news" element={<News />} />
           <Route path="/news/:id" element={<NewsDetail />} />
+          <Route path="/add-news" element={<AddNewsArticle />} />
           <Route path="/culture" element={<Culture />} />
           <Route path="/submit-review" element={<SubmitReview />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
