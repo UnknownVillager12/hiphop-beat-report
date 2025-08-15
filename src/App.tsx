@@ -6,6 +6,7 @@ import Index from "./pages/Index";
 import Artists from "./pages/Artists";
 import Albums from "./pages/Albums";
 import AlbumDetail from "./pages/AlbumDetail";
+import AddAlbum from "./pages/AddAlbum";
 import News from "./pages/News";
 import NewsDetail from "./pages/NewsDetail";
 import Culture from "./pages/Culture";
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/artist/:id" element={<ArtistDetail />} />
           <Route path="/albums" element={<Albums />} />
           <Route path="/album/:id" element={<AlbumDetail />} />
+          <Route path="/add-album" element={<AddAlbum />} />
           <Route path="/news" element={<News />} />
           <Route path="/news/:id" element={<NewsDetail />} />
           <Route path="/add-news" element={<AddNewsArticle />} />
